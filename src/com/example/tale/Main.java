@@ -1,4 +1,5 @@
 package com.example.tale;
+// [5/5] 메인(Main)
 
 public class Main {
     public static void main(String[] args) {
@@ -26,6 +27,7 @@ public class Main {
         catHouse.isHungry();
         catHouse.isHappy();
         catHouse.feedAnimal("tuna");
+        catHouse.isHappy();
     }
 }
 

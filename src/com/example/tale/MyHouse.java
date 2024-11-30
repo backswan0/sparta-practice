@@ -1,10 +1,10 @@
 package com.example.tale;
+// [4/5] 클래스 MyHouse
 
 public class MyHouse {
 
     // 1. 속성
     private final Animal animal;
-    private boolean isHungry;
 
     // 2. 생성자
     public MyHouse(Animal animal) {

@@ -1,4 +1,5 @@
 package com.example.tale;
+// [3/5] 인터페이스 Animal을 오버라이딩한 클래스 Cat
 
 public class Cat implements Animal {
 
@@ -6,6 +7,9 @@ public class Cat implements Animal {
     private String name;
     private boolean isHungry = false;
     /*
+    [유의 사항]
+    [a] 논리형 boolean 타입 변수는 is~와 같이 명명하자.
+
     [수정 전]
     private boolean isHungry = false;
     private boolean isHappy = true;
@@ -31,10 +35,10 @@ public class Cat implements Animal {
         if (isHungry) {
             /*
             [유의 사항]
-            [a] 이중 부정은 피하자: !isNotHungry (X)
+            [b] 이중 부정은 피하자: !isNotHungry (X)
                 (이유) 부정인지 긍정인지 추가로 생각해야 하므로
-            [b] 더 많이 사용할 상황을 변수나 함수의 이름으로 쓰자.
-            [c] not 대신 반의어를 변수나 함수의 이름으로 사용하자.
+            [c] 더 많이 사용할 상황을 변수나 함수의 이름으로 쓰자.
+            [d] not 대신 반의어를 변수나 함수의 이름으로 사용하자.
                 (예) isNotHungry 대신 isFull
              */
             System.out.println(name + " is hungry now.");
@@ -55,7 +59,7 @@ public class Cat implements Animal {
         return !isHungry;
 
         [유의 사항]
-        [d] 느낌표(!) 쓸 상황은 되도록 피하자.
+        [e] 느낌표(!) 쓸 상황은 되도록 피하자.
          */
     }
 
@@ -71,4 +75,3 @@ public class Cat implements Animal {
         }
     }
 }
-

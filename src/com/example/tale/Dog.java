@@ -1,4 +1,5 @@
 package com.example.tale;
+// [2/5] 인터페이스 Animal을 오버라이딩한 클래스 Dog
 
 public class Dog implements Animal {
     // 1. 속성
@@ -43,4 +44,3 @@ public class Dog implements Animal {
         }
     }
 }
-
